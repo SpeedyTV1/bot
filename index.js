@@ -34,7 +34,7 @@ bot.on('message', message=>{
             message.channel.bulkDelete(args[1])
         break;
         case 'links':
-            message.channel.send('**Group:**https://www.roblox.com/groups/3265104/S-H-I-E-L-D-World-Protectors#!/about')
+            message.channel.send('**Group: **https://www.roblox.com/groups/3265104/S-H-I-E-L-D-World-Protectors#!/about')
         break;
 
 
