@@ -17,11 +17,13 @@ bot.on('message', message=>{
 
     switch(args[0]){
         case 'cmds':
-            const embed = new.Discord.RichEmbed()
+            const embed1 = new Discord.RichEmbed()
             .setTitle('Commands')
             .addField('-info', 'Shows info about the server and the bot.')
-            .addField('-links', 'Displays the group link and Discord invite code')
+            .addField('-links', 'Displays the group link and Discord invite code.')
             .addField('-clear [n]', 'Clears inserted ammount of messages including the command.')
+            .setColor(0x0FF1DC)
+            message.channel.send(embed1);
         break;
         case 'execute':
             message.channel.send('Not in order.')
