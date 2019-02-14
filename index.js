@@ -5,7 +5,7 @@ const token = 'NTQ1MzUxODgwODIyMzU4MDQ5.D0YblA.tTKlwuf3ym7bLSeGT5YaSkW9Yo8';
 
 const PREFIX = '-';
 
-var version = 'ALPHA 0.0.2';
+var version = '1.0.0';
 
 bot.on('ready', () =>{
     console.log('Bot ONLINE.');
