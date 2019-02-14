@@ -35,6 +35,7 @@ bot.on('message', message=>{
         break;
         case 'links':
             message.channel.send('**Group: **https://www.roblox.com/groups/3265104/S-H-I-E-L-D-World-Protectors#!/about')
+            message.channel.send('**Discord invite: **https://discord.gg/hE7rjdn')
         break;
 
 
