@@ -8,13 +8,18 @@ const PREFIX = '-';
 var version = '1.0.0';
 
 bot.on('ready', () =>{
-    console.log('Bot ONLINE.');
-})
+    console.log('Bot ONLINE.')
+    
+bot.user.setStatus('Online') //Status here
+
+bot.user.setActivity('on executions with HYDRA.')
+
+});
 
 bot.on('message', message=>{
    
     let args = message.content.substring(PREFIX.length).split(" ");
-
+    //Commands starts here
     switch(args[0]){
         case 'cmds':
             const embed1 = new Discord.RichEmbed()
