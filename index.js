@@ -76,7 +76,7 @@ bot.on('message', message=>{
           //  }
       //  break;
         case 'file':
-            if(args[1] === 'Theta Protocol'){
+            if(args[1] === 'Theta_Protocol'){
                 message.channel.send('https://marvelcinematicuniverse.fandom.com/wiki/Theta_Protocol')
             }else{
                 message.channel.send('Invalid File')
