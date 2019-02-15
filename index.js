@@ -29,9 +29,9 @@ bot.on('message', message=>{
             .setColor(0x0FF1DC)
             message.channel.send(embed1);
         break;
-        case 'execute':
-            message.channel.send('Not in order.')
-        break;
+        //case 'execute':
+            //message.channel.send('Not in order.')
+        //break;
         case "info":
             const embed = new Discord.RichEmbed()
             .setTitle('Informations')
@@ -61,19 +61,19 @@ bot.on('message', message=>{
            // message.channel.send('@everyone')
                                   
         //break;
-        case 'database':
-            if(args[1] === '5581'){
-                const embed2 = new Discord.RichEmbed()
-                .setTitle('Database')
-                .addField('Director', 'SpeedyTV_1')
-                .addField('Secretary', 'fggggfbnf')
-                .addField('Deputyy Director', 'JordySpero')
-                .setColor(0xF1C40F)
-                message.channel.send(embed2);
-            }else{
-                message.channel.send('Invalid Password.')
-            }
-        break;
+        //case 'database':
+           //if(args[1] === '5581'){
+                //const embed2 = new Discord.RichEmbed()
+                //.setTitle('Database')
+                //.addField('Director', 'SpeedyTV_1')
+                //.addField('Secretary', 'fggggfbnf')
+                //.addField('Deputyy Director', 'JordySpero')
+                //.setColor(0xF1C40F)
+                //message.channel.send(embed2);
+            //}else{
+                //message.channel.send('Invalid Password.')
+            //}
+        //break;
 
 
 
