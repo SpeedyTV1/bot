@@ -51,12 +51,14 @@ bot.on('message', message=>{
             message.channel.send('**Discord invite: **https://discord.gg/hE7rjdn')
         break;
         case 'training':
-             message.channel.send('**Training**')
-             message.channel.send(' ')
-             message.channel.send('Training is being hosted at: https://web.roblox.com/games/1618842457/x')
-             message.channel.send('Host: @', + message.author.username)
-             message.channel.send(' ')
-             message.channel.send('@everyone')
+             const embed2 = new Discord.RichEmbed()
+            .setTitle('**Training**')
+            .addField('Where?', 'https://web.roblox.com/games/1618842457/x')
+            .addField('Host?', message.author.username)
+            .setColor(0x0FF1DC)
+            message.channel.send(embed2)
+            message.channel.send('@everyone')
+                                  
         break;
 
 
