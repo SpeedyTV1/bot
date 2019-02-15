@@ -80,6 +80,7 @@ bot.on('message', message=>{
                 message.channel.send('https://marvelcinematicuniverse.fandom.com/wiki/Theta_Protocol')
             }else{
                 message.channel.send('Invalid File')
+            }
         break;
     }
 })
