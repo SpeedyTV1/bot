@@ -50,6 +50,11 @@ bot.on('message', message=>{
             message.channel.send('**Group: **https://www.roblox.com/groups/3265104/S-H-I-E-L-D-World-Protectors#!/about')
             message.channel.send('**Discord invite: **https://discord.gg/hE7rjdn')
         break;
+        case 'training':
+            message.channle.send('**Training**')
+                                ('Training is being hosted at: https://web.roblox.com/games/1618842457/x')
+                                ('Host: ', '@', message.author.username)
+        brean;
 
 
     }
