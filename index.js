@@ -75,9 +75,12 @@ bot.on('message', message=>{
           //      message.channel.send('Invalid Password.')
           //  }
       //  break;
-
-
-
+        case 'file':
+            if(args[1] === 'Theta Protocol'){
+                message.channel.send('https://marvelcinematicuniverse.fandom.com/wiki/Theta_Protocol')
+            }else{
+                message.channel.send('Invalid File')
+        break;
     }
 })
 
