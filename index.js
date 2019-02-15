@@ -4,6 +4,7 @@ const bot = new Discord.Client ();
 const PREFIX = '-';
 
 var version = '1.0.0';
+var password = '5581'
 
 bot.on('ready', () =>{
     console.log('Bot ONLINE.')
@@ -61,19 +62,20 @@ bot.on('message', message=>{
            // message.channel.send('@everyone')
                                   
         //break;
-        //case 'database':
-           //if(args[1] === '5581'){
-                //const embed2 = new Discord.RichEmbed()
-                //.setTitle('Database')
-                //.addField('Director', 'SpeedyTV_1')
-                //.addField('Secretary', 'fggggfbnf')
-                //.addField('Deputyy Director', 'JordySpero')
-                //.setColor(0xF1C40F)
-                //message.channel.send(embed2);
-            //}else{
-                //message.channel.send('Invalid Password.')
-            //}
-        //break;
+        case 'database':
+           if(args[1] === password){
+                const embed2 = new Discord.RichEmbed()
+                .setTitle('Database')
+                .addField('Director', 'SpeedyTV_1')
+                .addField('Secretary', 'fggggfbnf')
+                .addField('Deputyy Director', 'JordySpero')
+                .setColor(0xF1C40F)
+                message.channel.send(embed2);
+                message.channel.bulkDelete(message)
+            }else{
+                message.channel.send('Invalid Password.')
+            }
+        break;
 
 
 
