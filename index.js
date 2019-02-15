@@ -50,16 +50,16 @@ bot.on('message', message=>{
             message.channel.send('**Group: **https://www.roblox.com/groups/3265104/S-H-I-E-L-D-World-Protectors#!/about')
             message.channel.send('**Discord invite: **https://discord.gg/hE7rjdn')
         break;
-        case 'training':
-             const embed2 = new Discord.RichEmbed()
-            .setTitle('**Training**')
-            .addField('Where?', 'https://web.roblox.com/games/1618842457/x')
-            .addField('Host?', message.author.username)
-            .setColor(0x0FF1DC)
-            message.channel.send(embed2)
-            message.channel.send('@everyone')
+        //case 'training':
+             //const embed2 = new Discord.RichEmbed()
+            //.setTitle('**Training**')
+            //.addField('Where?', 'https://web.roblox.com/games/1618842457/x')
+            //.addField('Host?', message.author.username)
+            //.setColor(0x0FF1DC)
+            //message.channel.send(embed2)
+           // message.channel.send('@everyone')
                                   
-        break;
+        //break;
 
 
     }
