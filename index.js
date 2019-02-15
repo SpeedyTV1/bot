@@ -71,7 +71,6 @@ bot.on('message', message=>{
                 .addField('Deputyy Director', 'JordySpero')
                 .setColor(0xF1C40F)
                 message.channel.send(embed2);
-                message.channel.bulkDelete(password)
             }else{
                 message.channel.send('Invalid Password.')
             }
