@@ -54,7 +54,7 @@ bot.on('message', message=>{
              message.channel.send('**Training**')
              message.channel.send(' ')
              message.channel.send('Training is being hosted at: https://web.roblox.com/games/1618842457/x')
-             message.channel.send('Host: @', message.author.username)
+             message.channel.send('Host: @', + message.author.username)
              message.channel.send(' ')
              message.channel.send('@everyone')
         break;
