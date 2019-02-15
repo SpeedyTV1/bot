@@ -10,7 +10,7 @@ bot.on('ready', () =>{
     
 bot.user.setStatus('Online') //Status here
 
-bot.user.setActivity('HYDRA Destruction Simulator 2019')
+bot.user.setActivity('Prefix: - | -cmds')
 
 });
 
