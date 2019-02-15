@@ -51,7 +51,7 @@ bot.on('message', message=>{
             message.channel.send('**Discord invite: **https://discord.gg/hE7rjdn')
         break;
         case 'training':
-            message.channle.send('**Training**')
+            message.channel.send('**Training**')
                                 ('Training is being hosted at: https://web.roblox.com/games/1618842457/x')
                                 ('Host: ', '@', message.author.username)
         brean;
