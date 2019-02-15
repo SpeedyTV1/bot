@@ -52,9 +52,9 @@ bot.on('message', message=>{
         break;
         case 'training':
              message.channel.send('**Training**')
-                                 ('Training is being hosted at: https://web.roblox.com/games/1618842457/x')
-                                 ('Host: ', '@', message.author.username)
-        brean;
+             message.channel.send('Training is being hosted at: https://web.roblox.com/games/1618842457/x')
+             message.channel.send('Host: ', '@', message.author.username)
+        break;
 
 
     }
