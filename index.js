@@ -53,11 +53,9 @@ bot.on('message', function(message){
             message.channel.send('**Group: **https://www.roblox.com/groups/3265104/S-H-I-E-L-D-World-Protectors#!/about')
             message.channel.send('**Discord invite: **https://discord.gg/hE7rjdn')
         break;
-        case 'training':
-            message.channel.send('')
-             
-                                  
-        break;
+        //case 'training':
+           // message.channel.send('')
+        //break;
         //case 'database':
            //if(args[1] === password){
                 //const embed2 = new Discord.RichEmbed()
