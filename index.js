@@ -11,7 +11,7 @@ bot.on('ready', () =>{
     
 bot.user.setStatus('Online') //Status here
 
-bot.user.setActivity('Prefix: - | -cmds')
+bot.user.setActivity('Status: Online | -cmds')
 
 });
 
