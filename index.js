@@ -9,7 +9,7 @@ var password = '5581';
 bot.on('ready', () =>{
     console.log('Bot ONLINE.')
     
-bot.user.setStatus('idle') //Status here
+bot.user.setStatus('Online') //Status here
 
 bot.user.setActivity('Prefix: - | -cmds')
 
