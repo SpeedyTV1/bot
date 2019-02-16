@@ -1,25 +1,25 @@
 const Discord = require ('discord.js');
 const bot = new Discord.Client ();
 
-const PREFIX = '-';
+const PREFIX = "-";
 
 var version = '1.0.0';
-var password = '5581'
+var password = '5581';
 
 bot.on('ready', () =>{
     console.log('Bot ONLINE.')
     
-bot.user.setStatus('Online') //Status here
+bot.user.setStatus('idle') //Status here
 
 bot.user.setActivity('Prefix: - | -cmds')
 
 });
 
-bot.on('message', message=>{
+bot.on('message', function(message){
    
     let args = message.content.substring(PREFIX.length).split(" ");
     //Commands starts here
-    switch(args[0]){
+    switch(args[0].toLowerCase()){
         case 'cmds':
             const embed1 = new Discord.RichEmbed()
             .setTitle('Commands')
@@ -53,16 +53,11 @@ bot.on('message', message=>{
             message.channel.send('**Group: **https://www.roblox.com/groups/3265104/S-H-I-E-L-D-World-Protectors#!/about')
             message.channel.send('**Discord invite: **https://discord.gg/hE7rjdn')
         break;
-        //case 'training':
-             //const embed2 = new Discord.RichEmbed()
-            //.setTitle('**Training**')
-            //.addField('Where?', 'https://web.roblox.com/games/1618842457/x')
-            //.addField('Host?', message.author.username)
-            //.setColor(0x0FF1DC)
-            //message.channel.send(embed2)
-           // message.channel.send('@everyone')
+        case 'training':
+            message.channel.send('')
+             
                                   
-        //break;
+        break;
         //case 'database':
            //if(args[1] === password){
                 //const embed2 = new Discord.RichEmbed()
@@ -84,6 +79,6 @@ bot.on('message', message=>{
             }
         break;
     }
-})
+});
 
 bot.login(process.env.token);
