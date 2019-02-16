@@ -1,26 +1,25 @@
 const Discord = require ('discord.js');
 const bot = new Discord.Client ();
 
-const PREFIX = "-";
-
 var version = '1.0.0';
+const PREFIX = '-';
 var password = '5581';
 
 bot.on('ready', () =>{
     console.log('Bot ONLINE.')
     
-bot.user.setStatus('Online') //Status here
+bot.user.setStatus('idle') //Status here
 
-bot.user.setActivity('Status: Online | -cmds')
+bot.user.setActivity('Status: Maintenance | -cmds')
 
 });
 
-bot.on('message', function(message){
-   
-    let args = message.content.substring(PREFIX.length).split(" ");
+bot.on('message', message=>{
+
+    let arguement = message.content.substring(PREFIX.lenght).split(" ");
     //Commands starts here
-    switch(args[0].toLowerCase()){
-        case 'cmds':
+    switch(arguement[0].toLowerCase()){
+        case '-cmds':
             const embed1 = new Discord.RichEmbed()
             .setTitle('Commands')
             .addField('-info', 'Shows info about the server and the bot.')
@@ -31,10 +30,10 @@ bot.on('message', function(message){
             .setColor(0x0FF1DC)
             message.channel.send(embed1);
         break;
-        //case 'execute':
+        //case '-execute':
             //message.channel.send('Not in order.')
         //break;
-        case "info":
+        case "-info":
             const embed = new Discord.RichEmbed()
             .setTitle('Informations')
             .addField('Server Owner', message.guild.owner.user.username)
@@ -45,15 +44,15 @@ bot.on('message', function(message){
             .setColor(0xF1C40F)
             message.channel.send(embed);
          break; 
-        case 'clear':
+        case '-clear':
             if(!args[1]) return message.reply('Error. Please define second arguement.')
             message.channel.bulkDelete(args[1])
         break;
-        case 'links':
+        case '-links':
             message.channel.send('**Group: **https://www.roblox.com/groups/3265104/S-H-I-E-L-D-World-Protectors#!/about')
             message.channel.send('**Discord invite: **https://discord.gg/hE7rjdn')
         break;
-        //case 'training':
+        //case '-training':
            // message.channel.send('')
         //break;
         //case 'database':
@@ -69,13 +68,31 @@ bot.on('message', function(message){
           //      message.channel.send('Invalid Password.')
           //  }
       //  break;
-        case 'file':
+        case '-file':
             if(args[1] === 'Theta_Protocol'){
                 message.channel.send('https://marvelcinematicuniverse.fandom.com/wiki/Theta_Protocol')
                 console.log(message.author.username + ' has accessed Theta Protocol File.')
             }else{
                 message.channel.send('Invalid File')
             }
+        break;
+        case '-maintenance':
+        if(message.author.id === '249912319633522690'){
+            bot.user.setStatus('idle')
+            bot.user.setActivity('Status: Maintenance | -cmds')
+            message.channel.send('Status: Maintenance')
+        }else{
+            message.channel.search('Insufficient permissions.')
+        }
+        break;
+        case '-online':
+        if(message.author.id === '249912319633522690'){
+            bot.user.setStatus('Online')
+            bot.user.setActivity('Status: Online | -cmds')
+            message.channel.send('Status: Online')
+        }else{
+            message.channel.send('Insufficient permissions.')
+        }
         break;
     }
 });
