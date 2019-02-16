@@ -16,9 +16,9 @@ bot.user.setActivity('Status: Online | -cmds')
 
 bot.on('message', message=>{
 
-    let arguement = message.content.substring(PREFIX.lenght).split(" ");
+    let args = message.content.substring(PREFIX.lenght).split(" ");
     //Commands starts here
-    switch(arguement[0].toLowerCase()){
+    switch(args[0].toLowerCase()){
         case '-cmds':
             const embed1 = new Discord.RichEmbed()
             .setTitle('Commands')
