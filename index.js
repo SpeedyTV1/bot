@@ -27,6 +27,7 @@ bot.on('message', message=>{
             .addField('-links', 'Displays the group link and Discord invite code.')
             .addField('-clear [n]', 'Clears inserted ammount of messages including the command.')
             //.addField('-training', 'Announces a training.')
+            .addField('-file [name]', 'Shows info a file.')
             .setColor(0x0FF1DC)
             message.channel.send(embed1);
         break;
