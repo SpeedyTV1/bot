@@ -51,6 +51,8 @@ bot.on('message', message=>{
         case '-links':
             message.channel.send('**Group: **https://www.roblox.com/groups/3265104/S-H-I-E-L-D-World-Protectors#!/about')
             message.channel.send('**Discord invite: **https://discord.gg/hE7rjdn')
+            message.channel.send('**L0 Trainee application: **https://goo.gl/forms/T5YWyf8490I05Z7o2')
+            message.channel.send('**Website: **https://goo.gl/s49Rox')
         break;
         //case '-training':
            // message.channel.send('')
