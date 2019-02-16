@@ -72,6 +72,7 @@ bot.on('message', function(message){
         case 'file':
             if(args[1] === 'Theta_Protocol'){
                 message.channel.send('https://marvelcinematicuniverse.fandom.com/wiki/Theta_Protocol')
+                console.log(message.author.username + ' has accessed Theta Protocol File.')
             }else{
                 message.channel.send('Invalid File')
             }
