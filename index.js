@@ -84,7 +84,7 @@ bot.on('message', message=>{
             bot.user.setActivity('Status: Maintenance | -cmds')
             message.channel.send('Status: Maintenance')
         }else{
-            message.channel.search('Insufficient permissions.')
+            message.channel.send('Insufficient permissions.')
         }
         break;
         case '-online':
