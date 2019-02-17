@@ -83,6 +83,7 @@ bot.on('message', message=>{
             bot.user.setStatus('idle')
             bot.user.setActivity('Status: Maintenance | -cmds')
             message.channel.send('Status: Maintenance')
+            console.log('Status: Maintenance')
         }else{
             message.channel.send('Insufficient permissions.')
         }
@@ -92,6 +93,7 @@ bot.on('message', message=>{
             bot.user.setStatus('Online')
             bot.user.setActivity('Status: Online | -cmds')
             message.channel.send('Status: Online')
+            console.log('Status: Online')
         }else{
             message.channel.send('Insufficient permissions.')
         }
