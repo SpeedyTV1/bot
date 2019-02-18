@@ -4,6 +4,7 @@ const bot = new Discord.Client ();
 var version = '1.0.0';
 const PREFIX = '-';
 var password = '5581';
+const ownerid = '249912319633522690';
 
 bot.on('ready', () =>{
     console.log('Bot ONLINE.')
@@ -79,7 +80,7 @@ bot.on('message', message=>{
             }
         break;
         case '-maintenance':
-        if(message.author.id === '249912319633522690'){
+        if(message.author.id === ownerid){
             bot.user.setStatus('idle')
             bot.user.setActivity('Status: Maintenance | -cmds')
             message.channel.send('Status: Maintenance')
@@ -89,7 +90,7 @@ bot.on('message', message=>{
         }
         break;
         case '-online':
-        if(message.author.id === '249912319633522690'){
+        if(message.author.id === ownerid){
             bot.user.setStatus('Online')
             bot.user.setActivity('Status: Online | -cmds')
             message.channel.send('Status: Online')
