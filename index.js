@@ -28,7 +28,7 @@ bot.on('message', message=>{
             .addField('-clear [n]', 'Clears inserted ammount of messages including the command.')
             //.addField('-training', 'Announces a training.')
             .addField('-file [name]', 'Shows info a file.')
-            .addField('-online', 'Sets status to online. Bot onlinewner only.')
+            .addField('-online', 'Sets status to online. Bot owner only.')
             .addField('-maintenance', 'Sets status to maintenance. Bot owner only.')
             .setColor(0x0FF1DC)
             message.channel.send(embed1);
