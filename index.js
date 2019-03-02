@@ -55,7 +55,7 @@ bot.on('message', message=>{
             message.channel.send('**Group: **https://www.roblox.com/groups/3265104/S-H-I-E-L-D-World-Protectors#!/about')
             message.channel.send('**Discord invite: **https://discord.gg/hE7rjdn')
             message.channel.send('**L0 Trainee application: **https://goo.gl/forms/T5YWyf8490I05Z7o2')
-            message.channel.send('**Website: **https://shieldwpwebsite.site123.me/**')
+            message.channel.send('**Website: **https://shieldwpwebsite.site123.me')
         break;
         //case '-training':
            // message.channel.send('')
