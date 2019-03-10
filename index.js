@@ -87,8 +87,7 @@ bot.on('message', message=>{
                 console.log(message.author.username + ' has accessed Project Captains Marvel File.')      
             }else{
                 message.channel.send('Invalid File')
-           
-                
+            }
         break;
         case '-maintenance':
         if(message.author.id === ownerid){
