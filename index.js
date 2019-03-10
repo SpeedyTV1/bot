@@ -88,6 +88,7 @@ bot.on('message', message=>{
             }else{
                 message.channel.send('Invalid File')
             }
+            }
         break;
         case '-maintenance':
         if(message.author.id === ownerid){
@@ -105,6 +106,13 @@ bot.on('message', message=>{
             bot.user.setActivity('Status: Online | -cmds')
             message.channel.send('Status: Online')
             console.log('Status: Online')
+        }else{
+            message.channel.send('Insufficient permissions.')
+        }
+        break;
+        case '-test':
+        if(message.author.id === ownerid){
+            message.channel.send('Bot working.')
         }else{
             message.channel.send('Insufficient permissions.')
         }
