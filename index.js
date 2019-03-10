@@ -88,7 +88,8 @@ bot.on('message', message=>{
             }else{
                 message.channel.send('Invalid File')
             }
-            }
+        }
+    }
         break;
         case '-maintenance':
         if(message.author.id === ownerid){
