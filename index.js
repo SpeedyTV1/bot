@@ -84,7 +84,15 @@ bot.on('message', message=>{
             }else{
              if(args[1] === 'Captain_Marvel'){
                 message.channel.send('In 1995, Agents Nick Fury and Phil Coulson were sent to investigate a mysterious woman, who had apparently crashed on Earth. The woman claimed to be Vers, a Kree warrior who tried to stop the shape-shifting Skrulls from taking over the planet. Fury encountered some of the Skrulls, after he followed Vers pursuit after one of them and killed a Skrull who impersonated Coulson. Fury located Vers and together they learned about her origin on Earth as a pilot who had helped the Kree Mar-Vell in testing a Light-Speed Engine. However they had to run from the Skrull Talos who impersonated Director Keller.Fury and Veres visited Maria Rambeau, a friend of Verse at her time on Earth, who helped her learn her real name, Carol Danvers. Talos tracked them down but he revealed that he only want to find a new home for his people and that the Kree army was after the source of the Light-Speed Engine. Fury, Danvers, Rambeau, Talos and the Flerken Goose flew to Mar-Vells laboratory in space, where they found the Light-Speed Engine source, the Tesseract, and Talos people. However the Kree found them, so as Danvers fought their army, Fury and the rest returned to Earth with the Tesseract and the Skrulls. Danvers eventually made the Kree retreat.Fury was asked by Danvers to keep the Tesseract while she would find for the Skrulls a new home and try to end the Kree-Skrull War. Before she left, she gave back to Fury his Transmitter Pager, now capable of calling Danvers galaxies away in case of emergency.')
-                console.log(message.author.username + ' has accessed Captain Marvel File.')      
+                console.log(message.author.username + ' has accessed Captain Marvel File.')    
+            }else{
+             if(args[1] === 'KREE'){
+                message.channel.send('The Kree are a scientifically and technologically advanced militaristic race of mostly blue-skinned humanoids from the planet Hala. One of the most technologically efficient races in the galaxy, the Kree have special emphasis placed on their skills in genetic engineering. They are a powerful force in the galaxy that control a vast empire characterized by its militaristic lifestyle, advanced technology, and arrogance.')
+                console.log(message.author.username + ' has accessed KREE File.')
+             }else{
+                 if(args[1] === 'Project_Quinjet'){
+                    message.channel.send('The Quinjet is a technologically advanced S.H.I.E.L.D. jet frequently used by the Avengers and STRIKE teams for transportation. Quinjets possess unique flight capabilities thanks to their unique wings which contain turbine fans. While most early Quinjets were lightly armed, the former S.H.I.E.L.D. initiative known as Project Insight introduced a series of Quinjets with a wider range of weapons.')
+                     console.log(message.author.username + ' has accessed Quinjet File.')
             }else{
                 message.channel.send('Invalid File')
             }
