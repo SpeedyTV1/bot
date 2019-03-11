@@ -98,6 +98,8 @@ bot.on('message', message=>{
             }
         }
     }
+            }
+            }
         break;
         case '-maintenance':
         if(message.author.id === ownerid){
