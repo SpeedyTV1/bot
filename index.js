@@ -31,7 +31,7 @@ bot.on('message', message=>{
             .addField('-file [name]', 'Shows info a file.')
             .addField('-online', 'Sets status to online. Bot owner only.')
             .addField('-maintenance', 'Sets status to maintenance. Bot owner only.')
-            .addField('-file', 'Shows list of all files.')
+            .addField('-files', 'Shows list of all files.')
             .setColor(0x0FF1DC)
             message.channel.send(embed1);
         break;
