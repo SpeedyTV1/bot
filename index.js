@@ -5,6 +5,7 @@ var version = '1.0.0';
 const PREFIX = '-';
 var password = '5581';
 const ownerid = '249912319633522690';
+const coownerid = '242531824830644224';
 
 bot.on('ready', () =>{
     console.log('Bot ONLINE.')
@@ -102,7 +103,7 @@ bot.on('message', message=>{
             }
         break;
         case '-maintenance':
-        if(message.author.id === ownerid){
+        if(message.author.id === ownerid, coownerid){
             bot.user.setStatus('idle')
             bot.user.setActivity('Status: Maintenance | -cmds')
             message.channel.send('Status: Maintenance')
@@ -112,7 +113,7 @@ bot.on('message', message=>{
         }
         break;
         case '-online':
-        if(message.author.id === ownerid){
+        if(message.author.id === ownerid, coownerid){
             bot.user.setStatus('Online')
             bot.user.setActivity('Status: Online | -cmds')
             message.channel.send('Status: Online')
@@ -122,7 +123,7 @@ bot.on('message', message=>{
         }
         break;
         case '-test':
-        if(message.author.id === ownerid){
+        if(message.author.id === ownerid, coownerid){
             message.channel.send('Bot working.')
         }else{
             message.channel.send('Insufficient permissions.')
