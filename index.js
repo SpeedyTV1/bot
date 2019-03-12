@@ -124,7 +124,7 @@ bot.on('message', message=>{
         break;
         case '-test':
         if(message.author.id === ownerid, coownerid){
-            message.channel.send('Bot working./nnew line test')
+            message.channel.send('Bot working.\nnew line test')
         }else{
             message.channel.send('Insufficient permissions.')
         }
