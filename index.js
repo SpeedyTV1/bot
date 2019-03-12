@@ -31,6 +31,7 @@ bot.on('message', message=>{
             .addField('-file [name]', 'Shows info a file.')
             .addField('-online', 'Sets status to online. Bot owner only.')
             .addField('-maintenance', 'Sets status to maintenance. Bot owner only.')
+            .addField('-file', 'Shows list of all files.')
             .setColor(0x0FF1DC)
             message.channel.send(embed1);
         break;
@@ -121,6 +122,9 @@ bot.on('message', message=>{
         }else{
             message.channel.send('Insufficient permissions.')
         }
+        break;
+        case '-files'
+           message.channel.send('Theta_Protocol\nP.E.G.A.S.U.S.\nCaptain_Marvel\nKREE\nProject_Quinjet')
         break;
         case '-test':
         if(message.author.id === ownerid, coownerid){
