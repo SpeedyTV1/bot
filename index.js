@@ -53,10 +53,10 @@ bot.on('message', message=>{
             message.channel.bulkDelete(args[1])
         break;
         case '-links':
-            message.channel.send('**Group: **https://www.roblox.com/groups/3265104/S-H-I-E-L-D-World-Protectors#!/about\n**Discord invite: **https://discord.gg/hE7rjdn\n**L0 Trainee application: **https://goo.gl/forms/4ZYNCneUPs6ZQVsr1\n**Website: **https://romanpolak5000.wixsite.com/shield')
-            //message.channel.send('**Discord invite: **https://discord.gg/hE7rjdn')
-            //message.channel.send('**L0 Trainee application: **https://goo.gl/forms/T5YWyf8490I05Z7o2')
-            //message.channel.send('**Website: **https://romanpolak5000.wixsite.com/shield')
+            message.channel.send('**Group: **https://www.roblox.com/groups/3265104/S-H-I-E-L-D-World-Protectors#!/about')
+            message.channel.send('**Discord invite: **https://discord.gg/hE7rjdn')
+            message.channel.send('**L0 Trainee application: **https://goo.gl/forms/AAABqEJXv1HnPBiu2')
+            message.channel.send('**Website: **https://romanpolak5000.wixsite.com/shield')
         break;
         //case '-training':
            // message.channel.send('')
