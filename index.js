@@ -123,7 +123,7 @@ bot.on('message', message=>{
             message.channel.send('Insufficient permissions.')
         }
         break;
-        case '-files'
+        case '-files':
             message.channel.send('Theta_Protocol\nP.E.G.A.S.U.S.\nCaptain_Marvel\nKREE\nProject_Quinjet')
         break;
         case '-test':
