@@ -96,10 +96,15 @@ bot.on('message', message=>{
                 message.channel.send('The Quinjet is a technologically advanced S.H.I.E.L.D. jet frequently used by the Avengers and STRIKE teams for transportation. Quinjets possess unique flight capabilities thanks to their unique wings which contain turbine fans. While most early Quinjets were lightly armed, S.H.I.E.L.D. initiative known as Project Insight introduced a series of Quinjets with a wider range of weapons.')
                 console.log(message.author.username + ' has accessed Quinjet File.')
             }else{
+             if(args[1] === 'Steve_Rogers'){
+                message.channel.send('Classified, L10 clearance required to access this file.')
+                console.log(message.author.username + ' has accessed Captain_America File.')
+            }else{
                 message.channel.send('Invalid File')
             }
         }
     }
+            }
             }
             }
         break;
