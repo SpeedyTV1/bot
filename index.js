@@ -97,7 +97,7 @@ bot.on('message', message=>{
                 console.log(message.author.username + ' has accessed Quinjet File.')
             }else{
              if(args[1] === 'Steve_Rogers'){
-                message.channel.send('Classified, L10 clearance required to access this file.')
+                message.channel.send('**Classified, L10 clearance required to access this file.**')
                 console.log(message.author.username + ' has accessed Captain_America File.')
             }else{
                 message.channel.send('Invalid File')
