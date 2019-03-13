@@ -129,7 +129,7 @@ bot.on('message', message=>{
         }
         break;
         case '-files':
-            message.channel.send('Theta_Protocol\nP.E.G.A.S.U.S.\nCaptain_Marvel\nKREE\nProject_Quinjet')
+            message.channel.send('Theta_Protocol\nP.E.G.A.S.U.S.\nCaptain_Marvel\nKREE\nProject_Quinjet\nSteve_Rogers')
         break;
         case '-test':
         if(message.author.id === ownerid, coownerid){
