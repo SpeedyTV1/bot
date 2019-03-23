@@ -58,7 +58,7 @@ bot.on('message', message=>{
             message.channel.send('**Discord invite: **https://discord.gg/hE7rjdn')
             message.channel.send('**L0 Trainee application: **https://goo.gl/forms/AAABqEJXv1HnPBiu2')
             message.channel.send('**Website: **https://romanpolak5000.wixsite.com/shield')
-            message.channel.send('**Edupage: **https://69072641.edupage.org/')
+            message.channel.send('**Edupage: **https://shieldtrainingonline.edupage.org/')
         break;
         //case '-training':
            // message.channel.send('')
